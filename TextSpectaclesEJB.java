@@ -27,7 +27,7 @@ public class TextSpectaclesEJB implements TextSpectaclesEJBLocal {
 
         char[] textCharacters = text.toCharArray();
 
-        if (text.isEmpty()) {
+         if (text.trim().isEmpty()){
 
             throw new EmptyValueException("Empty Message please enter a value");
         } else {
